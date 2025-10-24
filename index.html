@@ -1,0 +1,83 @@
+<!--на картинки можно тапать-->
+
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <link rel="stylesheet" href="styliser.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first</title>
+</head>
+
+<body>
+    <main>
+        <div class="body_table">
+            <table>
+                <tr>
+                    <th colspan="2">котек</th>
+                    <th>пушистость</th>
+                    <th>Борзость</th>
+                    <th>хвостатость</th>
+                </tr>
+                <tr>
+                    <td>
+                        <!--чекбокс на нажатие-->
+                        <input type="checkbox" name="rigby_modal" id="toggle_one">
+                        <label for="toggle_one">
+                            <img src="https://i.pinimg.com/736x/54/b9/ed/54b9ed08bdfa6f931ce3481906531a4f.jpg" alt="s"
+                                class="rigby">
+                        </label>
+                        <!--само модальное окно, должно открываться при нажатии на чекбокс-->
+                        <div class="modal_one">
+                            <div class="modal_content_one">
+                                <label for="toggle_one" class="close">&times;</label>
+                                <img src="https://i.pinimg.com/736x/54/b9/ed/54b9ed08bdfa6f931ce3481906531a4f.jpg"
+                                    alt="s" class="first_modal_content">
+                            </div>
+                        </div>
+                    </td>
+                    <td>котек оне</td>
+                    <td>9/10</td>
+                    <td>7/10</td>
+                    <td>10/10</td>
+                </tr>
+                <tr>
+                    <td>
+                        <!--второй чекбокс-->
+                        <input type="checkbox" name="burundushka_modal" id="toggle_two">
+                        <label for="toggle_two">
+                            <img src="https://i.pinimg.com/736x/f0/e1/ca/f0e1ca15558ac2b4c88e1c7d17223918.jpg" alt="ss"
+                                class="burundushka">
+                        </label>
+                        <!--второе модальное окно-->
+                        <div class="modal_two">
+                            <div class="modal_content_two">
+                                <label for="toggle_two" class="close">&times;</label>
+                                <img src="https://i.pinimg.com/736x/f0/e1/ca/f0e1ca15558ac2b4c88e1c7d17223918.jpg"
+                                    alt="ss" class="modal_content_second">
+                            </div>
+                        </div>
+                    </td>
+                    <td>котек ту</td>
+                    <td>9/10</td>
+                    <td>4/10</td>
+                    <td>10/10</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="comment_ab">
+        <label class="about" for="comment">Мнение о котеках</label>
+        <textarea id="comment" name="comment" rows="5" cols="40" spellcheck="true"
+            placeholder="Комментарий по таблице"></textarea>
+    </div>
+</body>
+
+</html>
